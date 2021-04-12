@@ -1,0 +1,12 @@
+.container {
+    width: 90%;
+    display: flex;
+}
+
+.info {
+    width: 50%;
+}
+
+.form {
+    width: 50%;
+}
