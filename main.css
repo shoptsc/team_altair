@@ -1,20 +1,25 @@
 body {
     width: 90%;
+    height: 100vh;
     margin: auto;
     font-family: 'Roboto', sans-serif;
 }
 
 .container {
     width: 95%;
-    margin: 20px auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .info {
-    width: 100%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .info img {
@@ -24,18 +29,19 @@ body {
 .info p {
     width: 100%;
     text-align: center;
-    font-size: 16px;
+    font-size: 24px;
     margin-top: 50px;
     letter-spacing: 1px;
 }
 
 .info h1 {
-    font-size: 36px;
+    font-size: 48px;
     margin-top: 10px;
 }
 
 .form {
-    width: 100%;
+    width: 45%;
+    height: 100%;
 }
 
 .form-body{
@@ -75,7 +81,16 @@ body {
 
 .fullname{
     display: flex;
-    width: 80%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fullname .fname{
+    width: 45%;
+}
+
+.fullname .lname{
+    width: 45%;
 }
 
 textarea {
@@ -142,45 +157,41 @@ textarea::placeholder{
     border: none;
 }
 
-@media screen and (min-width: 750px) {
-    .container {
-        width: 95%;
+@media screen and (max-width: 768px) {
+    .container{
         display: flex;
-        height: 100vh;
-        margin: 0 auto;
+        flex-direction: column;
     }
+
     .info {
-        width: 40%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: auto;
     }
-    .info img {
-        width: 80%;
-    }
     .info p {
-        font-size: 24px;
+        font-size: 18px;
     }
     .info h1 {
-        font-size: 48px;
+        font-size: 24px;
         margin-top: 10px;
     }
     .form {
-        width: 40%;
+        width: 100%;
         margin: auto;
     }
     .fullname {
         display: flex;
+        flex-direction: column;
         width: 100%;
     }
-    .fullname .fname {
-        padding-right: 10px;
+    .fullname .fname{
         width: 100%;
     }
-    .fullname .lname {
-        padding-left: 10px;
+    
+    .fullname .lname{
         width: 100%;
     }
 }
