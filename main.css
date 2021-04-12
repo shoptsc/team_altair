@@ -38,16 +38,19 @@ body {
     width: 100%;
 }
 
-.form-title {
-    padding-top: 10px;
-    color: rgb(175, 27, 27);
-    text-transform: uppercase;
-    text-align: center;
+.form-body{
+    width: 100%;
+    margin: 0 auto;
 }
 
-label {
-    padding-left: 10px;
+.form-title {
+    padding-top: 10px;
+    color: #D43131;
+    text-transform: uppercase;
+    font-size: 24px;
 }
+
+
 
 .form label {
     text-transform: capitalize;
@@ -58,18 +61,21 @@ label {
     display: block;
 }
 
-.form p {
-    padding-left: 10px;
-}
-
 .input {
     padding: 5px 3px;
-    margin: 5px 5px;
+    padding-left: 10px;
     display: block;
-    width: 100%;
-    border-radius: 10px;
+    height: 20px;
+    border-radius: 5px;
     outline: none;
-    border: 2px solid;
+    border: 1px solid #c4c4c4;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.fullname{
+    display: flex;
+    width: 80%;
 }
 
 textarea {
@@ -77,9 +83,46 @@ textarea {
     outline: none;
 }
 
-.form-group-check .check {
+textarea::placeholder{
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-group{
+    width: 100%;
     display: flex;
-    padding: 5px 0;
+    flex-direction: column;
+}
+
+.form-group select{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.form-group p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form-group-check{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.form-group-check .check{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .form-group-check .input {
@@ -93,9 +136,9 @@ textarea {
 
 .btn {
     color: white;
-    background: rgb(175, 27, 27);
+    background: #D43131;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 25px;
     border: none;
 }
 
