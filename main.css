@@ -1,35 +1,139 @@
-.container {
+body {
     width: 90%;
-    display: flex;
-    height: 100vh;
-    margin: 0 auto;
+    margin: auto;
+}
+
+.container {
+    width: 95%;
+    /* display: flex; */
+    /* height: 100vh; */
+    margin: 20px auto;
 }
 
 .info {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.info img{
+.info img {
     width: 80%;
 }
 
-.info p{
-    width: 70%;
+.info p {
+    width: 100%;
     text-align: center;
-    font-size: 24px;
+    font-size: 16px;
     margin-top: 50px;
     letter-spacing: 1px;
 }
 
-.info h1{
-    font-size: 48px;
+.info h1 {
+    font-size: 36px;
     margin-top: 10px;
 }
 
 .form {
-    width: 50%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.form-title {
+    padding-top: 10px;
+    color: rgb(175, 27, 27);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+label {
+    padding-left: 10px;
+}
+
+.form label {
+    text-transform: capitalize;
+}
+
+.form-group {
+    padding: 5px 0;
+    display: block;
+}
+
+.input {
+    padding: 5px 0;
+    margin: 5px 5px;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+}
+
+.form-group-check .check {
+    display: flex;
+    padding: 5px 0;
+}
+
+.form-group-check .input {
+    margin: 3px 0;
+}
+
+.button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn {
+    color: white;
+    background: rgb(175, 27, 27);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+@media screen and (min-width: 750px) {
+    .container {
+        width: 95%;
+        display: flex;
+        height: 100vh;
+        margin: 0 auto;
+    }
+    .info {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .info img {
+        width: 80%;
+    }
+    .info p {
+        font-size: 24px;
+    }
+    .info h1 {
+        font-size: 48px;
+        margin-top: 10px;
+    }
+    .info {
+        /* width: 50%; */
+    }
+    .form {
+        width: 40%;
+        /* margin-left: 5px; */
+        margin: auto;
+    }
+    .fullname {
+        display: flex;
+        width: 100%;
+    }
+    .fullname .fname {
+        padding-right: 10px;
+        width: 100%;
+    }
+    .fullname .lname {
+        padding-left: 10px;
+        width: 100%;
+    }
 }
