@@ -1,6 +1,7 @@
 body {
     width: 90%;
     margin: auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -57,12 +58,22 @@ label {
     display: block;
 }
 
+.form p {
+    padding-left: 10px;
+}
+
 .input {
     padding: 5px 3px;
     margin: 5px 5px;
     display: block;
     width: 100%;
     border-radius: 10px;
+    outline: none;
+    border: 2px solid;
+}
+
+textarea {
+    border: 2px solid;
     outline: none;
 }
 
